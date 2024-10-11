@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+/*Globales*/
+
+h1,h2,h3{
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto 0 auto
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/* Header y Navegacion*/
+h1 span {
+  color: #037bc0;
+}
+
+.nombre-sitio {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.nav-principal {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-nav-principal {
+  border-top: .1rem solid #e1e1e1;
+}
+
+.hero {
+  background-image: url("../img/principal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55rem;
+}
+
+/*Listado Categorias*/
+.categorias h2 {
+  text-align: center;
+}
+
+.listado-categorias{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; /*Nos permite dar una separación*/
+}
+
+.categoria a{
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.categoria a:hover{ /*hover es para cuando pasamos por encima el ratos*/
+  background-color: #037bc0;
+  color: #ffffff;
+  border-bottom-right-radius: 1rem;
+}
